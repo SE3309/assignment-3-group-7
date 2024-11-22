@@ -6,6 +6,9 @@ import mysql.connector
 # Get the password from the environment variable
 db_password = os.getenv('DB_PASSWORD')
 
+#Change your database name here
+databaseName = '3309'
+
 fake = Faker()
 
 # Establish connection to the MySQL database
@@ -13,7 +16,7 @@ connection = mysql.connector.connect(
     host='localhost',
     user='root',
     password=db_password,
-    database='3309'
+    database=databaseName
 )
 
 cursor = connection.cursor()
