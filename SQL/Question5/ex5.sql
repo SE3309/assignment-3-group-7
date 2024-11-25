@@ -1,5 +1,3 @@
-USE `Regional_Police_Department`;
-
 -- Command 1: Close all incidents older than some interval (30 days here)
 /* Step 1: Create a temporary table to store the incident numbers
  * This is done as safe update mode does not allow updates without 
